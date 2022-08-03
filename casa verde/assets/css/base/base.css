@@ -1,0 +1,40 @@
+@import url(_variaveis.css);
+@import url(_reset.css);
+body {
+    font-family: var(--familia-corpo);
+    font-size: var(--tamanho-corpo);
+    background: url(../../img/background.png);
+    background-position: center;
+    color: var(--cinza);
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo {
+    font-size: var(--tamanho-titulo);
+}
+
+.titulo-destaque {
+    font-size: var(--tamanho-titulo--destaque);
+    font-weight: var(--peso-titulo-destaque);
+    display: block;
+    color: var(--preto);
+    font-family: var(--familia-titulo-destaque);
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.alinhamento-esquerda {
+    text-align: left;
+}
+
+.alinhamento-meio {
+    text-align: center;
+}
+
+.texto {
+    line-height: 1.5rem;
+}

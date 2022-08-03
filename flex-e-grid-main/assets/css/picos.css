@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'icones';
+    src: url(/assets/font/icones.ttf);
+}
+
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFF;
+}
+
+.cabecalho {
+    background-color: #15191C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0px 21px rgb(0 0 0 / 70%);
+    box-sizing: border-box;
+    padding: 5px 22px;
+}
+
+.logo__cabecalho {
+    width: 40px;
+}
+
+.botao__menu::before {
+    content: "\e904";
+    font-size: 20px;
+}
+
+.botao__notificacao::before {
+    content: "\e906";
+    font-size: 20px;
+}
+
+
+/*Menu lateral-------------------------------*/
+
+.menu__lateral {
+    background-color: #15191C;
+    width: 70vw;
+    height: 200vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.logo__menu--lateral {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.itens-lista {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+    height: 64px;
+    padding-left: 64px;
+}
+
+.itens-lista--ativo {
+    padding-left: 55px;
+    color: #ffffff;
+}
+
+.itens-lista::before {
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.itens-lista--inicio::before {
+    content: "\e902";
+}
+
+.itens-lista--video::before {
+    content: "\e90e";
+}
+
+.itens-lista--picos::before {
+    content: "\e909";
+}
+
+.itens-lista--integrantes::before {
+    content: "\e903";
+}
+
+.itens-lista--camisa::before {
+    content: "\e900";
+}
+
+.itens-lista--pinturas::before {
+    content: "\e90a";
+}

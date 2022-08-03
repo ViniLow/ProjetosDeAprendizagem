@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body {
+            background: rgb(56, 56, 56);
+            color: white;
+            font: normal 15pt arial;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        input {
+            width: 100px;
+            margin: 10px;
+            font-size: 15pt;
+        }
+        
+        .res {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="Somar()">
+    <div class="res">Selecione dois valores para somar</div>
+
+    <script>
+        function Somar() {
+            //var txt1 = document.getElementById('n1');
+            //var txt2 = document.querySelector('input#n2');
+            var n1 = Number.parseInt(document.getElementById('n1').value);
+            var n2 = Number((document.querySelector('input#n2')).value);
+            var s = n1 + n2;
+            var res = document.getElementsByClassName('res')[0];
+            res.innerHTML = `A soma de ${n1} mais ${n2} é igual a <strong>${s}</strong>`;
+        }
+    </script>
+</body>
+
+</html>

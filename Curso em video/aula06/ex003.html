@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de JavaScript...</title>
+    <style>
+        body {
+            background-color: rgb(73, 130, 196);
+            font: normal 18pt Arial;
+            color: white;
+        }
+        
+        h1 {
+            color: rgb(197, 150, 62);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Pronto... me livrei da maldição do Olá Mundo</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite o primeiro número: ")) // O Number.parseInt serve para converter para Numero Inteiro
+        var n2 = Number.parseFloat(window.prompt("Digite o segundo número: ")) // O Number.parseFloat serve para converter para Numero real
+        var n3 = Number(window.prompt("Digite o terceiro número: ")) // Apenas o Number identifica o que foi digitado e converte para Inteiro ou real
+            // o window.prompt sempre nos retorna um string, por isso se faz necessário a conversão acima
+        var s = n1 + n2 + n3; // se não convertemos como acima, ele irá juntar todos os numeros. Ex: n1 = 4; n2 = 2; n3 = 5; s = 425.
+        window.alert(`A soma de ${n1} mais ${n2} mais ${n3} é igual a ${String(s)}!`) // dentro da crase podemos usar o template string ${} para concatenar
+            /* podemos concatenar com o + dessa maneira:
+            window.alert("A soma de " + n2 + " mais " + n3 + " é igual a " + s")
+            */
+            /*Também podemos converter numero para string:
+            String(n) ou n.toString()
+
+            Formatando String:
+            s.length // retorna a quantidade de caracteres
+            s.toUpperCase() // tudo para "MAUISCULO"
+            s.toLowerCase() // tudo para "minusculo"
+            */
+    </script>
+</body>
+
+</html>
